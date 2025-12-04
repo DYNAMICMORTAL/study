@@ -32,7 +32,8 @@ function ensureEnvLoaded() {
 		driveFolderId: process.env.DRIVE_FOLDER_ID,
 		adminApiKey: process.env.ADMIN_API_KEY,
 		siteBaseUrl: process.env.SITE_BASE_URL,
-		googleServiceAccount
+		googleServiceAccount,
+		corsAllowOrigins: process.env.CORS_ALLOW_ORIGINS || '*'
 	};
 
 	return cache.env;
